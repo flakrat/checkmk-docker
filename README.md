@@ -15,3 +15,9 @@ Example:
 $ ~/bin/docker-checkmk-backup.sh -c monitoring -d /backups/CheckMK
 ```
 
+Example Cron to run nightly at midnight:
+```shell
+# Min  Hour  Day(Month)  Month  Day(Week)
+# ---  ----  ----------  -----  ---------
+0 0 * * * $HOME/bin/docker-checkmk-backup.sh -c monitoring -d /backups/CheckMK
+```
